@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data.binding.app';
+  
+  count:number = 0;
+  onButtonClick(){
+    this.count++
+  }
+
+  hideStar:boolean = true;
+  onStarClick(){
+    if(this.hideStar)
+    {
+      this.hideStar = false;
+    }
+    else
+    {
+      this.hideStar = true;
+    }
+
+  }
+
 }

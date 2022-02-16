@@ -1,0 +1,15 @@
+<p>list works!</p>
+
+<ul>
+    <li *ngFor="let x of Presidents">
+        {{x}}
+    </li>
+  </ul>
+  
+  <hr>
+
+  <ul>
+      <li *ngFor="let Presidents of Presidents2">
+          {{Presidents.name}}, {{Presidents.term}}
+      </li>
+  </ul>
